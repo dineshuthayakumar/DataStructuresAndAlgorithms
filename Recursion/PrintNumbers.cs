@@ -4,7 +4,7 @@ namespace DataStructuresAndAlgorithms.Recursion
     {
         public static void Print(int number)
         {
-            if (number == 0)
+            if (number <= 0)
                 return;
 
             Print(number - 1);

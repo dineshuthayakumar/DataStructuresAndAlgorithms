@@ -27,18 +27,21 @@ public static class CompareIterationVsRecursion
     {
         DateTime start, end;
         TimeSpan timeElapsed1, timeElapsed2;
+        int total1, total2 = 0;
 
         start = DateTime.Now;
-        SumOfNumbers.Calculate(number);
+        total1 = SumOfNumbers.Calculate(number);
         end = DateTime.Now;
         timeElapsed1 = end.Subtract(start);
 
 
         start = DateTime.Now;
-        Recursions.SumOfNumbers.Calculate(number);
+        total2 = Recursions.SumOfNumbers.Calculate(number);
         end = DateTime.Now;
         timeElapsed2 = end.Subtract(start);
 
+        Console.WriteLine($"Total from Iterations: {total1}");
+        Console.WriteLine($"Total from Iterations: {total2}");
         Console.WriteLine($"Total Milliseconds for Iterations: {timeElapsed1.TotalMilliseconds}");
         Console.WriteLine($"Total Milliseconds for Recursions: {timeElapsed2.TotalMilliseconds}");
     }
