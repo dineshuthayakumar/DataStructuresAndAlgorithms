@@ -2,13 +2,13 @@ namespace DataStructuresAndAlgorithms.Recursion
 {
     public class PrintNumbers
     {
-        public static void Print(int n)
+        public static void Print(int number)
         {
-            if (n == 0)
+            if (number == 0)
                 return;
 
-            Print(n - 1);
-            System.Console.WriteLine(n);
+            Print(number - 1);
+            System.Console.WriteLine(number);
         }
     }
 }
