@@ -2,4 +2,5 @@
 using DataStructuresAndAlgorithms.Iteration;
 using Recursions = DataStructuresAndAlgorithms.Recursion;
 
-CompareIterationVsRecursion.CompareIterationVsRecursionForPrintNumbers();
+//CompareIterationVsRecursion.CompareIterationVsRecursionForPrintNumbers(1000);
+CompareIterationVsRecursion.CompareIterationVsRecursionForSumOfNumbers(1000);
