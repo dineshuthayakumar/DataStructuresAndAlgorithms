@@ -1,22 +1,22 @@
-# Comparison Results for PrintNumber function are below
+# Comparison Results
 
-Total Milliseconds for Iterations: **389.166**  
-Total Milliseconds for Recursions: **171.341**  
+## PrintNumber Function
 
-Total Milliseconds for Iterations: **201.6734**  
-Total Milliseconds for Recursions: **149.532**  
+|  Execution   | Iterations (ms) | Recursions (ms) |
+|--------------|------------------|-----------------|
+| 1            | 389.166          | 171.341         |
+| 2            | 201.6734         | 149.532         |
 
-# Comparison Results for SumOfNumber function are below
+## SumOfNumber Function
 
-Total Milliseconds for Iterations: **4.5048**  
-Total Milliseconds for Recursions: **0.1185**  
+| Execution    | Iterations (ms) | Recursions (ms) |
+|--------------|------------------|-----------------|
+| 1            | 4.5048           | 0.1185          |
+| 2            | 3.0634           | 0.0687          |
 
-Total Milliseconds for Iterations: **3.0634**  
-Total Milliseconds for Recursions: **0.0687**  
+## SumOfNumber Function (Tree vs Tail Recursion)
 
-# Comparison Results for SumOfNumber function are below
-Total Milliseconds for Tree Recursion: **2.7317**  
-Total Milliseconds for Tail Recursion: **0.0438**  
-
-Total Milliseconds for Tree Recursion: **3.52**  
-Total Milliseconds for Tail Recursion: **0.0443**
+|  Execution   | Tree Recursion (ms) | Tail Recursion (ms) |
+|--------------|---------------------|---------------------|
+| 1            | 2.7317              | 0.0438              |
+| 2            | 3.52                | 0.0443              |
