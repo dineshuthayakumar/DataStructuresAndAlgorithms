@@ -2,9 +2,10 @@ namespace DataStructuresAndAlgorithms.Recursion
 {
     public class TreeRecursion
     {
-        public static int Calculate( int start, int end)
+        public static int Calculate(int start, int end)
         {
             int total = 0;
+            
             if (start == end)
                 return start;
             else if (start < end)
@@ -13,6 +14,7 @@ namespace DataStructuresAndAlgorithms.Recursion
                 total += Calculate(start, mid);
                 total += Calculate(mid + 1, end);
             }
+
             return total;
         }
 
