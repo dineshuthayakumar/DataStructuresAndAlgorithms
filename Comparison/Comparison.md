@@ -1,22 +1,22 @@
 # Comparison Results
 
-## PrintNumber Function
+## PrintNumbers(1000) Function (Iteration vs Recursion)
 
 |  Execution   | Iterations (ms) | Recursions (ms) |
 |--------------|------------------|-----------------|
-| 1            | 389.166          | 171.341         |
-| 2            | 201.6734         | 149.532         |
+| 1            | 195.0387         | 258.5885         |
+| 2            | 187.4933         | 189.5958         |
 
-## SumOfNumber Function
+## SumOfNumbers(1000) Function (Iteration vs Recursion)
 
 | Execution    | Iterations (ms) | Recursions (ms) |
 |--------------|------------------|-----------------|
-| 1            | 4.5048           | 0.1185          |
-| 2            | 3.0634           | 0.0687          |
+| 1            | 3.4365           | 0.0761          |
+| 2            | 2.9695           | 0.0757          |
 
-## SumOfNumber Function (Tree vs Tail Recursion)
+## SumOfNumbers(1000) Function (Tree vs Tail Recursion)
 
 |  Execution   | Tree Recursion (ms) | Tail Recursion (ms) |
 |--------------|---------------------|---------------------|
-| 1            | 2.7317              | 0.0438              |
-| 2            | 3.52                | 0.0443              |
+| 1            | 3.7941              | 0.0646              |
+| 2            | 5.1724              | 0.6768              |
