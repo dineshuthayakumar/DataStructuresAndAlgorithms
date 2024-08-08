@@ -43,7 +43,7 @@ namespace DataStructuresAndAlgorithms.Comparison
             timeElapsed2 = end.Subtract(start);
 
             Console.WriteLine($"Total from Iterations: {total1}");
-            Console.WriteLine($"Total from Iterations: {total2}");
+            Console.WriteLine($"Total from Recursions: {total2}");
             Console.WriteLine($"Total Milliseconds for Iterations: {timeElapsed1.TotalMilliseconds}");
             Console.WriteLine($"Total Milliseconds for Recursions: {timeElapsed2.TotalMilliseconds}");
         }

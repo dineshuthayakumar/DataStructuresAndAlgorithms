@@ -2,7 +2,7 @@ namespace DataStructuresAndAlgorithms.Recursion
 {
     public class TreeRecursion
     {
-        public static int Calculate(int start, int end)
+        private static int Calculate(int start, int end)
         {
             int total = 0;
             
