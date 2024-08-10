@@ -15,20 +15,20 @@ namespace DataStructuresAndAlgorithms.Search
             return numbers;
         }
 
-        public static void Print(int[] number)
+        public static void Print(int[] numbers)
         {
             System.Console.WriteLine("Index");
-            for (int index = 0; index < number.Length; index++)
+            for (int index = 0; index < numbers.Length; index++)
             {
                 System.Console.Write($"{index}\t");
             }
 
             System.Console.WriteLine();
-            System.Console.WriteLine("Numbers");
+            System.Console.WriteLine($"Numbers: {numbers.Length}");
 
-            for (int index = 0; index < number.Length; index++)
+            for (int index = 0; index < numbers.Length; index++)
             {
-                System.Console.Write($"{number[index]}\t");
+                System.Console.Write($"{numbers[index]}\t");
             }
 
             System.Console.WriteLine();
