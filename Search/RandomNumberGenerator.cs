@@ -15,6 +15,12 @@ namespace DataStructuresAndAlgorithms.Search
             return numbers;
         }
 
+        public static int[] GenerateSortedRandomNumbers(int count)
+        {
+            int[] numbers = RandomNumberGenerator.GenerateRandomNumbers(count);
+            return numbers.OrderBy(number => number).ToArray();
+        }
+
         public static void Print(int[] numbers)
         {
             System.Console.WriteLine("Index");

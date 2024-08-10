@@ -4,4 +4,6 @@
 //CompareIterationVsRecursion.CompareIterationVsRecursionForSumOfNumbers(1000);
 //CompareTreeVsTailRecursion.CompareTreeVsTailRecursionForSumOfNumbers(1000);
 
-LinearSearch.ExecuteSearch();
+//LinearSearch.ExecuteSearch();
+//BinarySearchIteration.ExecuteSearch();
+BinarySearchRecursion.ExecuteSearch();
