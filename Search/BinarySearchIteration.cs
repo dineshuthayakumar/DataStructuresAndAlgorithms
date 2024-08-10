@@ -8,7 +8,7 @@ namespace DataStructuresAndAlgorithms.Search
             int end = array.Length - 1;
             int mid = (start + end) / 2;
 
-            while(start < end)
+            while(start <= end)
             {
                 if (array[mid] == key)
                 {
