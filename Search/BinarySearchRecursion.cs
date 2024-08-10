@@ -7,15 +7,15 @@ namespace DataStructuresAndAlgorithms.Search
             return Search(numbers, key, 0, numbers.Length - 1);
         }
 
-        private static int Search(int[] numbers, int key, int start, int end)
+        public static int Search(int[] numbers, int key, int start, int end)
         {
-            if (start >= end)
+            if (start > end)
             {
                 Console.WriteLine($"{key} not found!");
                 return -1;
             }
 
-            int mid = start + end / 2;
+            int mid = (start + end) / 2;
 
             if (numbers[mid] == key)
             {

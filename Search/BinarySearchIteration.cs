@@ -6,7 +6,7 @@ namespace DataStructuresAndAlgorithms.Search
         {
             int start = 0;
             int end = array.Length - 1;
-            int mid = start + end / 2;
+            int mid = (start + end) / 2;
 
             while(start < end)
             {
@@ -23,8 +23,7 @@ namespace DataStructuresAndAlgorithms.Search
                 {
                     start = mid + 1;
                 }
-
-                mid = start + end / 2;
+                 mid = (start + end) / 2;
             }
 
             Console.WriteLine($"{key} not found!");
