@@ -1,4 +1,5 @@
-﻿using DataStructuresAndAlgorithms.Search;
+﻿using DataStructuresAndAlgorithms.Comparison;
+using DataStructuresAndAlgorithms.Search;
 
 //CompareIterationVsRecursion.CompareIterationVsRecursionForPrintNumbers(1000);
 //CompareIterationVsRecursion.CompareIterationVsRecursionForSumOfNumbers(1000);
@@ -6,4 +7,6 @@
 
 //LinearSearch.ExecuteSearch();
 //BinarySearchIteration.ExecuteSearch();
-BinarySearchRecursion.ExecuteSearch();
+//BinarySearchRecursion.ExecuteSearch();
+
+CompareLinearSearchBinarySearch.Compare();
