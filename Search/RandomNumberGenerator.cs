@@ -7,9 +7,9 @@ namespace DataStructuresAndAlgorithms.Search
             int[] numbers = new int[count];
             Random random = new Random();
 
-            for (int i = 0; i < count; i++)
+            for (int index = 0; index < count; index++)
             {
-                numbers[i] = random.Next(0, count);
+                numbers[index] = random.Next(1, count);
             }
 
             return numbers;
@@ -17,16 +17,18 @@ namespace DataStructuresAndAlgorithms.Search
 
         public static void Print(int[] number)
         {
-            for (int i = 0; i < number.Length; i++)
+            System.Console.WriteLine("Index");
+            for (int index = 0; index < number.Length; index++)
             {
-                System.Console.Write($"{i}\t");
+                System.Console.Write($"{index}\t");
             }
 
             System.Console.WriteLine();
+            System.Console.WriteLine("Numbers");
 
-            for (int i = 0; i < number.Length; i++)
+            for (int index = 0; index < number.Length; index++)
             {
-                System.Console.Write($"{number[i]}\t");
+                System.Console.Write($"{number[index]}\t");
             }
 
             System.Console.WriteLine();
