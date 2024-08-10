@@ -4,12 +4,23 @@ namespace DataStructuresAndAlgorithms.Search
     {
         public static int[] GenerateRandomNumbers(int count)
         {
+            List<int> numberList = new List<int>();
             int[] numbers = new int[count];
             Random random = new Random();
 
-            for (int index = 0; index < count; index++)
+            for (int index = 0; index < count;)
             {
-                numbers[index] = random.Next(1, count);
+                int randomNumber = random.Next(1, 5000);
+                if (numberList.Contains(randomNumber))
+                {
+                    continue;
+                }
+                else
+                {
+                    numberList.Add(randomNumber);
+                    numbers[index] = randomNumber;
+                    index++;
+                }
             }
 
             return numbers;
