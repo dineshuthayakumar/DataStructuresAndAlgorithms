@@ -10,7 +10,7 @@ namespace DataStructuresAndAlgorithms.Search
 
             for (int index = 0; index < count;)
             {
-                int randomNumber = random.Next(1, 5000);
+                int randomNumber = random.Next(1, int.MaxValue);
                 if (numberList.Contains(randomNumber))
                 {
                     continue;
