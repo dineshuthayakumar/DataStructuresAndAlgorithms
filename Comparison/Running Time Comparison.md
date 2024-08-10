@@ -1,4 +1,4 @@
-# Comparison Results
+# Running Time Comparison Results
 
 ## PrintNumbers.Print(1000) Function (Iteration vs Recursion)
 
