@@ -1,3 +1,5 @@
+using DataStructuresAndAlgorithms.Helper;
+
 namespace DataStructuresAndAlgorithms.Search
 {
     public class LinearSearch
@@ -19,19 +21,11 @@ namespace DataStructuresAndAlgorithms.Search
 
         public static void ExecuteSearch()
         {
-            int randomNumberLength = 5;
-
-            Console.Write("Provide the length of the random numbers to generate:");
-            int.TryParse(Console.ReadLine(), out randomNumberLength);
+            int randomNumberLength = UserInterfaceHelper.GetANumberFromUser("Provide the count of the random numbers to generate:");
             int[] numbers = RandomNumberGenerator.GenerateRandomNumbers(randomNumberLength);
-
             RandomNumberGenerator.Print(numbers);
-
-            int numberToFind = -1;
-            Console.Write($"Provide a number to find in the random numbers generated between 1 and {randomNumberLength}:");
-            int.TryParse(Console.ReadLine(), out numberToFind);
-
+            int numberToFind = UserInterfaceHelper.GetANumberFromUser($"Provide a number to find in the random numbers generated between 1 and {randomNumberLength}:");
             LinearSearch.Search(numbers, numberToFind);
-        }
+        }       
     }
 }
