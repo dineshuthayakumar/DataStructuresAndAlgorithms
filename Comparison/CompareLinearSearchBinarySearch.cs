@@ -1,3 +1,4 @@
+using DataStructuresAndAlgorithms.Helper;
 using DataStructuresAndAlgorithms.Search;
 
 namespace DataStructuresAndAlgorithms.Comparison
@@ -6,16 +7,11 @@ namespace DataStructuresAndAlgorithms.Comparison
     {
         public static void Compare()
         {
-            int randomNumberLength = 5;
-
-            Console.Write("Provide the length of the random numbers to generate:");
-            int.TryParse(Console.ReadLine(), out randomNumberLength);
+            int randomNumberLength = UserInterfaceHelper.GetANumberFromUser("Provide the count of the random numbers to generate:");
             int[] numbers = RandomNumberGenerator.GenerateSortedRandomNumbers(randomNumberLength);
             RandomNumberGenerator.Print(numbers);
 
-            int numberToFind = -1;
-            Console.Write($"Provide a number to find in the random numbers generated between 1 and {randomNumberLength}:");
-            int.TryParse(Console.ReadLine(), out numberToFind);
+            int numberToFind = UserInterfaceHelper.GetANumberFromUser($"Provide a number to find in the random numbers generated between 1 and {randomNumberLength}:");
 
             DateTime start, end;
             TimeSpan timeElapsed1, timeElapsed2,timeElapsed3;
