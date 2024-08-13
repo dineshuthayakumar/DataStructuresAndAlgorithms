@@ -21,9 +21,9 @@
 | 1            | 3.7941              | 0.0646              |
 | 2            | 5.1724              | 0.6768              |
 
-## Serarch Function (Linear Search vs Binary Search Iteration vs Binary Search Recursion)
+## Serarch Function on a set of 100,000 numbers (Linear Search vs Binary Search Iteration vs Binary Search Recursion)
 
-|  Execution   | Linear (ms)         | Binary Search Iterative (ms) | Binary Search Recursive (ms) |
-|--------------|---------------------|------------------------------|------------------------------|
-| 1            | 1.9848              | 0.5169                       | 0.4617                       |
-| 2            | 7.0829              | 1.5388                       | 2.5231                       |
+|  Execution   | Linear (ms)         | Binary Search Iterative (ms) | Binary Search Recursive (ms) |Remarks |
+|--------------|---------------------|------------------------------|------------------------------|-----------------------------|
+| 1            | 1.9848              | 0.5169                       | 0.4617                       |Key selected towards the end |
+| 2            | 7.0829              | 1.5388                       | 2.5231                       |Key selected in between      |
