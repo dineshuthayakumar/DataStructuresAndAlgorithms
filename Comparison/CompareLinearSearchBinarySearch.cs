@@ -9,7 +9,7 @@ namespace DataStructuresAndAlgorithms.Comparison
         {
             int randomNumberLength = UserInterfaceHelper.GetANumberFromUser("Provide the count of the random numbers to generate:");
             int[] numbers = RandomNumberGenerator.GenerateSortedRandomNumbers(randomNumberLength);
-            RandomNumberGenerator.Print(numbers);
+            UserInterfaceHelper.Print(numbers);
 
             int numberToFind = UserInterfaceHelper.GetANumberFromUser($"Provide a number to find in the random numbers generated between 1 and {randomNumberLength}:");
 

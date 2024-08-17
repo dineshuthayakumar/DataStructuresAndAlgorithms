@@ -1,5 +1,6 @@
 using System.Data;
 using System.Security.Cryptography;
+using DataStructuresAndAlgorithms.Helper;
 using DataStructuresAndAlgorithms.Search;
 using RandomNumberGenerator = DataStructuresAndAlgorithms.Search.RandomNumberGenerator;
 
@@ -31,9 +32,9 @@ namespace DataStructuresAndAlgorithms.Sorting
         public static void ExecuteSorting()
         {
             int[] numbers = RandomNumberGenerator.GenerateRandomNumbers(10);
-            RandomNumberGenerator.Print(numbers);
+            UserInterfaceHelper.Print(numbers);
             Sort(numbers);
-            RandomNumberGenerator.Print(numbers);
+            UserInterfaceHelper.Print(numbers);
         }
     }
 }
