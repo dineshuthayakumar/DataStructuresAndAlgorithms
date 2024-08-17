@@ -33,7 +33,5 @@ namespace DataStructuresAndAlgorithms.Search
             int[] numbers = RandomNumberGenerator.GenerateRandomNumbers(count);
             return numbers.OrderBy(number => number).ToArray();
         }
-
-        
     }
 }
