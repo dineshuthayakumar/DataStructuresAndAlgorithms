@@ -15,18 +15,16 @@ namespace DataStructuresAndAlgorithms.Sorting
             for(int left = 0; left < count - 1; left++)
             {
                 position = left;
-                for(int right = left + 1; right < count; right++)
+                for (int right = left + 1; right < count; right++)
                 {
-                    if(numbers[right] < numbers[position])
+                    if (numbers[right] < numbers[position])
                     {
                         position = right;
                     }
                 }
 
-                int temp = numbers[left];
-                numbers[left] = numbers[position];
-                numbers[position] = temp;
-            }      
+                NumberHelper.Swap(numbers, left, position);
+            }
         }
 
         public static void ExecuteSorting()
