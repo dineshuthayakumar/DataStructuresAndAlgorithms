@@ -7,20 +7,22 @@ namespace DataStructuresAndAlgorithms.Comparison
 {
     public static class CompareSorting
     {
-        public static void CompareAll()
+        public static void CompareAll(int countOfNumbers)
         {
             DateTime start, end;
             TimeSpan timeElapsed1, timeElapsed2;
 
+            int[] numbers = RandomNumberGenerator.GenerateRandomNumbers(countOfNumbers);
+
             start = DateTime.Now;
-            int[] numbers = RandomNumberGenerator.GenerateRandomNumbers(100000);
             SelectionSort.Sort(numbers);
             end = DateTime.Now;
             timeElapsed1 = end.Subtract(start);
 
 
+            numbers = RandomNumberGenerator.GenerateRandomNumbers(countOfNumbers);
             start = DateTime.Now;
-            numbers = RandomNumberGenerator.GenerateSortedRandomNumbers(100000);
+            numbers.OrderBy(number => number).ToArray();
             end = DateTime.Now;
             timeElapsed2 = end.Subtract(start);
 

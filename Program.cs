@@ -12,4 +12,4 @@ using DataStructuresAndAlgorithms.Sorting;
 
 //CompareLinearSearchBinarySearch.Compare();
 
-CompareSorting.CompareAll();
+CompareSorting.CompareAll(100000);
