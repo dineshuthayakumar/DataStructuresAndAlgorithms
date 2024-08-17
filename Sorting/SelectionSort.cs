@@ -11,19 +11,18 @@ namespace DataStructuresAndAlgorithms.Sorting
         public static void Sort(int[] numbers)
         {
             int count = numbers.Length;
-            int position = -1;
+            int smallestNumberPosition = -1;
             for(int left = 0; left < count - 1; left++)
             {
-                position = left;
+                smallestNumberPosition = left;
                 for (int right = left + 1; right < count; right++)
                 {
-                    if (numbers[right] < numbers[position])
+                    if (numbers[right] < numbers[smallestNumberPosition])
                     {
-                        position = right;
+                        smallestNumberPosition = right;
                     }
                 }
-
-                NumberHelper.Swap(numbers, left, position);
+                NumberHelper.Swap(numbers, left, smallestNumberPosition);
             }
         }
 
