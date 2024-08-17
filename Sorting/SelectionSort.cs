@@ -1,7 +1,5 @@
 using System.Data;
-using System.Security.Cryptography;
 using DataStructuresAndAlgorithms.Helper;
-using DataStructuresAndAlgorithms.Search;
 using RandomNumberGenerator = DataStructuresAndAlgorithms.Search.RandomNumberGenerator;
 
 namespace DataStructuresAndAlgorithms.Sorting
