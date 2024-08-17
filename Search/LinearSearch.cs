@@ -6,12 +6,12 @@ namespace DataStructuresAndAlgorithms.Search
     {
         public static int Search(int[] array, int key)
         {
-            for (int i = 0; i < array.Length; i++)
+            for (int index = 0; index < array.Length; index++)
             {
-                if (array[i] == key)
+                if (array[index] == key)
                 {
-                    Console.WriteLine($"{key} found at index {i}");
-                    return i;
+                    Console.WriteLine($"{key} found at index {index}");
+                    return index;
                 }
             }
 
