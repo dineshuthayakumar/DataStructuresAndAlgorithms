@@ -5,7 +5,7 @@ Ouput: [a'<sub>1</sub>, a'<sub>2</sub>, a'<sub>3</sub>, ..., a'<sub>n-1</sub>, a
 
 | Algorithm|Sorting Type|Stability|Time Complexity|
 |----------|------------|---------|---------------|
-|Selection Sort|Comparison|Unstable|O(N<sup>2<sup>)|
+|Selection Sort|Comparison|Unstable|O(N<sup>2</sup>)|
 |Insertion Sort|Comparison|Stable|
 |Bubble Sort|Comparison|Stable|
 |Merge Sort|Comparison|Stable|
