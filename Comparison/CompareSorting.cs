@@ -20,8 +20,8 @@ namespace DataStructuresAndAlgorithms.Comparison
 
 
             start = DateTime.Now;
-            end = DateTime.Now;
             numbers = RandomNumberGenerator.GenerateSortedRandomNumbers(100000);
+            end = DateTime.Now;
             timeElapsed2 = end.Subtract(start);
 
             Console.WriteLine($"Total Milliseconds for Selection Sort: {timeElapsed1.TotalMilliseconds}");
