@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace DataStructuresAndAlgorithms.Search
 {
     public class RandomNumberGenerator
@@ -34,10 +36,11 @@ namespace DataStructuresAndAlgorithms.Search
 
         public static void Print(int[] numbers)
         {
+            NumberFormatInfo nfi = new CultureInfo( "en-US", false ).NumberFormat;
             System.Console.WriteLine("Index");
             for (int index = 0; index < numbers.Length; index++)
             {
-                System.Console.Write($"{index}\t");
+                System.Console.Write($"{index.ToString("N00", nfi)}\t");
             }
 
             System.Console.WriteLine();
@@ -45,7 +48,7 @@ namespace DataStructuresAndAlgorithms.Search
 
             for (int index = 0; index < numbers.Length; index++)
             {
-                System.Console.Write($"{numbers[index]}\t");
+                System.Console.Write($"{numbers[index].ToString("N00", nfi)}\t");
             }
 
             System.Console.WriteLine();
