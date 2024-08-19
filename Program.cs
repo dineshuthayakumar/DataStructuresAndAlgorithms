@@ -1,4 +1,5 @@
 ﻿using DataStructuresAndAlgorithms.Comparison;
+using DataStructuresAndAlgorithms.Helper;
 using DataStructuresAndAlgorithms.Search;
 using DataStructuresAndAlgorithms.Sorting;
 
@@ -12,4 +13,5 @@ using DataStructuresAndAlgorithms.Sorting;
 
 //CompareLinearSearchBinarySearch.Compare();
 
-CompareSorting.CompareAll(100000);
+//CompareSorting.CompareAll(100000);
+InsertionSort.ExecuteSorting();
