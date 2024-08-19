@@ -1,7 +1,5 @@
 using DataStructuresAndAlgorithms.Helper;
-using DataStructuresAndAlgorithms.Iteration;
 using DataStructuresAndAlgorithms.Sorting;
-using RandomNumberGenerator = DataStructuresAndAlgorithms.Search.RandomNumberGenerator;
 
 namespace DataStructuresAndAlgorithms.Comparison
 {

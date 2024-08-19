@@ -1,6 +1,6 @@
 using System.Globalization;
 
-namespace DataStructuresAndAlgorithms.Search
+namespace DataStructuresAndAlgorithms.Helper
 {
     public class RandomNumberGenerator
     {

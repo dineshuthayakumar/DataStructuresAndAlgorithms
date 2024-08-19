@@ -1,6 +1,5 @@
 using System.Data;
 using DataStructuresAndAlgorithms.Helper;
-using RandomNumberGenerator = DataStructuresAndAlgorithms.Search.RandomNumberGenerator;
 
 namespace DataStructuresAndAlgorithms.Sorting
 {

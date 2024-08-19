@@ -1,6 +1,4 @@
-using DataStructuresAndAlgorithms.Iteration;
 using DataStructuresAndAlgorithms.Recursion;
-using Recursions = DataStructuresAndAlgorithms.Recursion;
 
 namespace DataStructuresAndAlgorithms.Comparison
 {
