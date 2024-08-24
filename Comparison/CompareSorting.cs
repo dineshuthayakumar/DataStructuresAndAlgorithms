@@ -9,8 +9,8 @@ namespace DataStructuresAndAlgorithms.Comparison
         {
             DateTime start, end;
             TimeSpan timeElapsed1, timeElapsed2, timeElapsed3, timeElapsed4;
-
-            int[] numbers = RandomNumberGenerator.GenerateRandomNumbers(countOfNumbers);
+            
+            int[] numbers = FileHelper.ReadFile();
 
             start = DateTime.Now;
             numbers.OrderBy(number => number).ToArray();
@@ -18,29 +18,29 @@ namespace DataStructuresAndAlgorithms.Comparison
             timeElapsed1 = end.Subtract(start);
 
 
-            numbers = RandomNumberGenerator.GenerateRandomNumbers(countOfNumbers);
+            numbers = FileHelper.ReadFile();
             start = DateTime.Now;
             SelectionSort.Sort(numbers);
             end = DateTime.Now;
             timeElapsed2 = end.Subtract(start);
 
-            numbers = RandomNumberGenerator.GenerateRandomNumbers(countOfNumbers);
+            numbers = FileHelper.ReadFile();
             start = DateTime.Now;
             InsertionSort.Sort(numbers);
             end = DateTime.Now;
             timeElapsed3 = end.Subtract(start);
 
-            numbers = RandomNumberGenerator.GenerateRandomNumbers(countOfNumbers);
+            numbers = FileHelper.ReadFile();
             start = DateTime.Now;
             BubbleSort.Sort(numbers);
             end = DateTime.Now;
             timeElapsed4 = end.Subtract(start);
 
 
-            Console.WriteLine($"Total Milliseconds for .Net Order By: {timeElapsed1.TotalMilliseconds}");
-            Console.WriteLine($"Total Milliseconds for Selection Sort: {timeElapsed2.TotalMilliseconds}");
-            Console.WriteLine($"Total Milliseconds for Insertion Sort: {timeElapsed3.TotalMilliseconds}");
-            Console.WriteLine($"Total Milliseconds for Bubble Sort: {timeElapsed4.TotalMilliseconds}");
+            UserInterfaceHelper.PrintStatistics(".Net Order By: ", timeElapsed1.TotalMilliseconds);
+            UserInterfaceHelper.PrintStatistics("Selection Sort: ", timeElapsed2.TotalMilliseconds);
+            UserInterfaceHelper.PrintStatistics("Insertion Sort: ", timeElapsed3.TotalMilliseconds);
+            UserInterfaceHelper.PrintStatistics("Bubble Sort: ", timeElapsed4.TotalMilliseconds);
         }
     }
 }
