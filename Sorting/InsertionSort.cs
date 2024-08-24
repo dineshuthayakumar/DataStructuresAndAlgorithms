@@ -1,5 +1,4 @@
 using DataStructuresAndAlgorithms.Helper;
-using DataStructuresAndAlgorithms.Search;
 
 namespace DataStructuresAndAlgorithms.Sorting;
 

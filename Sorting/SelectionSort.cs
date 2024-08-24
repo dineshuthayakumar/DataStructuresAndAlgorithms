@@ -1,4 +1,3 @@
-using System.Data;
 using DataStructuresAndAlgorithms.Helper;
 
 namespace DataStructuresAndAlgorithms.Sorting
