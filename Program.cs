@@ -13,4 +13,4 @@ using DataStructuresAndAlgorithms.Sorting;
 
 //CompareLinearSearchBinarySearch.Compare();
 
-/CompareSorting.CompareAll(100000);
+CompareSorting.CompareAll(100000);
