@@ -34,7 +34,6 @@ namespace DataStructuresAndAlgorithms.Helper
         public static void PrintStatistics(string message, double number)
         {
             NumberFormatInfo nfi = new CultureInfo( "en-US", false ).NumberFormat;
-            //How to print the number in US format with commas as thousand separators.
             Console.WriteLine($"Total Milliseconds - {message}: {number.ToString("N00", nfi)}");
         } 
     }

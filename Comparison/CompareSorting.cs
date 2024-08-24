@@ -37,10 +37,10 @@ namespace DataStructuresAndAlgorithms.Comparison
             timeElapsed4 = end.Subtract(start);
 
 
-            UserInterfaceHelper.PrintStatistics(".Net Order By: ", timeElapsed1.TotalMilliseconds);
-            UserInterfaceHelper.PrintStatistics("Selection Sort: ", timeElapsed2.TotalMilliseconds);
-            UserInterfaceHelper.PrintStatistics("Insertion Sort: ", timeElapsed3.TotalMilliseconds);
-            UserInterfaceHelper.PrintStatistics("Bubble Sort: ", timeElapsed4.TotalMilliseconds);
+            UserInterfaceHelper.PrintStatistics(".Net Order By", timeElapsed1.TotalMilliseconds);
+            UserInterfaceHelper.PrintStatistics("Selection Sort", timeElapsed2.TotalMilliseconds);
+            UserInterfaceHelper.PrintStatistics("Insertion Sort", timeElapsed3.TotalMilliseconds);
+            UserInterfaceHelper.PrintStatistics("Bubble Sort", timeElapsed4.TotalMilliseconds);
         }
     }
 }
