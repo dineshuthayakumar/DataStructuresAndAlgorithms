@@ -1,3 +1,4 @@
+using DataStructuresAndAlgorithms.Helper;
 using DataStructuresAndAlgorithms.Iteration;
 using Recursions = DataStructuresAndAlgorithms.Recursion;
 
@@ -21,8 +22,8 @@ namespace DataStructuresAndAlgorithms.Comparison
             end = DateTime.Now;
             timeElapsed2 = end.Subtract(start);
 
-            Console.WriteLine($"Total Milliseconds for Iterations: {timeElapsed1.TotalMilliseconds}");
-            Console.WriteLine($"Total Milliseconds for Recursions: {timeElapsed2.TotalMilliseconds}");
+            UserInterfaceHelper.PrintStatistics("Iterations", timeElapsed1.TotalMilliseconds);
+            UserInterfaceHelper.PrintStatistics("Recursion", timeElapsed2.TotalMilliseconds);
         }
 
         public static void CompareIterationVsRecursionForSumOfNumbers(int number)
@@ -44,8 +45,8 @@ namespace DataStructuresAndAlgorithms.Comparison
 
             Console.WriteLine($"Total from Iterations: {total1}");
             Console.WriteLine($"Total from Recursions: {total2}");
-            Console.WriteLine($"Total Milliseconds for Iterations: {timeElapsed1.TotalMilliseconds}");
-            Console.WriteLine($"Total Milliseconds for Recursions: {timeElapsed2.TotalMilliseconds}");
+            UserInterfaceHelper.PrintStatistics("Iterations", timeElapsed1.TotalMilliseconds);
+            UserInterfaceHelper.PrintStatistics("Recursion", timeElapsed2.TotalMilliseconds);
         }
     }
 }

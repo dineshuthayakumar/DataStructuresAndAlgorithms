@@ -1,3 +1,4 @@
+using DataStructuresAndAlgorithms.Helper;
 using DataStructuresAndAlgorithms.Recursion;
 
 namespace DataStructuresAndAlgorithms.Comparison
@@ -23,8 +24,9 @@ namespace DataStructuresAndAlgorithms.Comparison
 
             Console.WriteLine($"Total from Tree Recursion: {total1}");
             Console.WriteLine($"Total from Tail Recursion: {total2}");
-            Console.WriteLine($"Total Milliseconds for Tree Recursion: {timeElapsed1.TotalMilliseconds}");
-            Console.WriteLine($"Total Milliseconds for Tail Recursion: {timeElapsed2.TotalMilliseconds}");
+
+            UserInterfaceHelper.PrintStatistics("Tree Recursion", timeElapsed1.TotalMilliseconds);
+            UserInterfaceHelper.PrintStatistics("Tail Recursion", timeElapsed2.TotalMilliseconds);
         }
     }
 }

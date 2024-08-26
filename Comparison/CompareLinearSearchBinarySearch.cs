@@ -32,9 +32,9 @@ namespace DataStructuresAndAlgorithms.Comparison
             end = DateTime.Now;
             timeElapsed3 = end.Subtract(start);
 
-            Console.WriteLine($"Total Milliseconds for Linear Search: {timeElapsed1.TotalMilliseconds}");
-            Console.WriteLine($"Total Milliseconds for Binary Search Iterations: {timeElapsed2.TotalMilliseconds}");
-            Console.WriteLine($"Total Milliseconds for Binary Search Recursions: {timeElapsed3.TotalMilliseconds}");
+            UserInterfaceHelper.PrintStatistics("Linear Search", timeElapsed1.TotalMilliseconds);
+            UserInterfaceHelper.PrintStatistics("Binary Search Iterations", timeElapsed2.TotalMilliseconds);
+            UserInterfaceHelper.PrintStatistics("Binary Search Recursions", timeElapsed3.TotalMilliseconds);
         }
     }
 }
