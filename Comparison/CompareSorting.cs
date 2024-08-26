@@ -5,7 +5,7 @@ namespace DataStructuresAndAlgorithms.Comparison
 {
     public static class CompareSorting
     {
-        public static void CompareAll(int countOfNumbers)
+        public static void CompareAll()
         {
             DateTime start, end;
             TimeSpan timeElapsed1, timeElapsed2, timeElapsed3, timeElapsed4;

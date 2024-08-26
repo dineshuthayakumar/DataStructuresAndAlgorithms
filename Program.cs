@@ -1,16 +1,3 @@
-﻿using DataStructuresAndAlgorithms.Comparison;
-using DataStructuresAndAlgorithms.Helper;
-using DataStructuresAndAlgorithms.Search;
-using DataStructuresAndAlgorithms.Sorting;
+﻿using DataStructuresAndAlgorithms.MenuHelper;
 
-//CompareIterationVsRecursion.CompareIterationVsRecursionForPrintNumbers(1000);
-//CompareIterationVsRecursion.CompareIterationVsRecursionForSumOfNumbers(1000);
-//CompareTreeVsTailRecursion.CompareTreeVsTailRecursionForSumOfNumbers(1000);
-
-//LinearSearch.ExecuteSearch();
-//BinarySearchIteration.ExecuteSearch();
-//BinarySearchRecursion.ExecuteSearch();
-
-//CompareLinearSearchBinarySearch.Compare();
-
-CompareSorting.CompareAll(100000);
+MenuHelper.PrintMainMenu();
