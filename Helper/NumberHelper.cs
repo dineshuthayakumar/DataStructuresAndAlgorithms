@@ -6,5 +6,20 @@ namespace DataStructuresAndAlgorithms.Helper {
             numbers[number1Index] = numbers[number2Index];
             numbers[number2Index] = temp;
         }
+
+        public static bool IsSorted(int[] numbers)
+        {
+            bool isSorted = true;
+            for (int index = 1; index < numbers.Length; index++)
+            {
+                if(numbers[index-1] > numbers[index])
+                {
+                    Console.WriteLine($"{numbers[index-1]} & {numbers[index]}");
+                    isSorted = false;
+                    break;
+                }
+            }
+            return isSorted;
+        }
     }
 }
