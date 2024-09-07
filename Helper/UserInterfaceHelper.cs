@@ -36,5 +36,11 @@ namespace DataStructuresAndAlgorithms.Helper
             NumberFormatInfo nfi = new CultureInfo( "en-US", false ).NumberFormat;
             Console.WriteLine($"Total Milliseconds - {message}: {number.ToString("N2", nfi)}");
         } 
+
+        public static void PrintSortedStatus(bool isSorted)
+        {
+            NumberFormatInfo nfi = new CultureInfo( "en-US", false ).NumberFormat;
+            Console.WriteLine($"Sorted Status - {isSorted}");
+        } 
     }
 }
