@@ -8,39 +8,49 @@ namespace DataStructuresAndAlgorithms.Comparison
         public static void CompareAll()
         {
             DateTime start, end;
-            TimeSpan timeElapsed1, timeElapsed2, timeElapsed3, timeElapsed4;
+            TimeSpan timeElapsed;
             
             int[] numbers = FileHelper.ReadFile();
 
             start = DateTime.Now;
-            numbers.OrderBy(number => number).ToArray();
+            numbers = numbers.OrderBy(number => number).ToArray();
             end = DateTime.Now;
-            timeElapsed1 = end.Subtract(start);
+            timeElapsed = end.Subtract(start);
+            UserInterfaceHelper.PrintStatistics(".Net Order By", timeElapsed.TotalMilliseconds);
+            UserInterfaceHelper.PrintSortedStatus(NumberHelper.IsSorted(numbers));
 
 
             numbers = FileHelper.ReadFile();
             start = DateTime.Now;
             SelectionSort.Sort(numbers);
             end = DateTime.Now;
-            timeElapsed2 = end.Subtract(start);
+            timeElapsed = end.Subtract(start);
+            UserInterfaceHelper.PrintStatistics("Selection Sort", timeElapsed.TotalMilliseconds);
+            UserInterfaceHelper.PrintSortedStatus(NumberHelper.IsSorted(numbers));
 
             numbers = FileHelper.ReadFile();
             start = DateTime.Now;
             InsertionSort.Sort(numbers);
             end = DateTime.Now;
-            timeElapsed3 = end.Subtract(start);
+            timeElapsed = end.Subtract(start);
+            UserInterfaceHelper.PrintStatistics("Insertion Sort", timeElapsed.TotalMilliseconds);
+            UserInterfaceHelper.PrintSortedStatus(NumberHelper.IsSorted(numbers));
 
             numbers = FileHelper.ReadFile();
             start = DateTime.Now;
             BubbleSort.Sort(numbers);
             end = DateTime.Now;
-            timeElapsed4 = end.Subtract(start);
+            timeElapsed = end.Subtract(start);
+            UserInterfaceHelper.PrintStatistics("Bubble Sort", timeElapsed.TotalMilliseconds);
+            UserInterfaceHelper.PrintSortedStatus(NumberHelper.IsSorted(numbers));
 
-
-            UserInterfaceHelper.PrintStatistics(".Net Order By", timeElapsed1.TotalMilliseconds);
-            UserInterfaceHelper.PrintStatistics("Selection Sort", timeElapsed2.TotalMilliseconds);
-            UserInterfaceHelper.PrintStatistics("Insertion Sort", timeElapsed3.TotalMilliseconds);
-            UserInterfaceHelper.PrintStatistics("Bubble Sort", timeElapsed4.TotalMilliseconds);
+            numbers = FileHelper.ReadFile();
+            start = DateTime.Now;
+            ShellSort.Sort(numbers);
+            end = DateTime.Now;
+            timeElapsed = end.Subtract(start);
+            UserInterfaceHelper.PrintStatistics("Shell Sort", timeElapsed.TotalMilliseconds);
+            UserInterfaceHelper.PrintSortedStatus(NumberHelper.IsSorted(numbers));
         }
     }
 }
