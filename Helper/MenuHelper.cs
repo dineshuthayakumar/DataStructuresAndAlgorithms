@@ -2,7 +2,7 @@ using DataStructuresAndAlgorithms.Comparison;
 using DataStructuresAndAlgorithms.Helper;
 using DataStructuresAndAlgorithms.Iteration;
 
-namespace DataStructuresAndAlgorithms.MenuHelper
+namespace DataStructuresAndAlgorithms.Helper
 {
     public static class MenuHelper
     {

@@ -1,3 +1,3 @@
-﻿using DataStructuresAndAlgorithms.MenuHelper;
+﻿using DataStructuresAndAlgorithms.Helper;
 
 MenuHelper.PrintMainMenu();
